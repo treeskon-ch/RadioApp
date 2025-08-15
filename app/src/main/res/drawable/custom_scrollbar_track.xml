@@ -1,0 +1,6 @@
+<!-- res/drawable/custom_scrollbar_track.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#000000"/> <!-- Light gray color -->
+    <corners android:radius="0dp"/>
+    <size android:width="4dp"/>
+</shape>

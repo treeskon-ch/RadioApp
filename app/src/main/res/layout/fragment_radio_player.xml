@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.RadioPlayerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutViewRadioPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circle_fare_radio_player">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_radio_player"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewIconStarNoneRadioPlayer"
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_star_none_radio_player"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                android:layout_marginTop="12sp"
+                android:layout_marginRight="14sp"/>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_circle_radio_player1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_circle_radio_player2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageViewRadioPlayer"
+                android:layout_width="153sp"
+                android:layout_height="153sp"
+                android:src="@drawable/icon_music"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:shapeAppearanceOverlay="@style/RoundedImage"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewRadioPlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="สถานีวิทยุ"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textFontWeight="400"
+            android:fontFamily="@font/noto_sans_thai_regular"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxWidth="322sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_marginTop="16sp"
+            android:background="@drawable/bg_gradient_radio_player"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="24sp">
+
+            <ImageView
+                android:id="@+id/imageViewIconPrevRadioPlayer"
+                android:layout_width="32sp"
+                android:layout_height="28sp"
+                android:src="@drawable/icon_prev_radio_player"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/imageViewIconPlayRadioPlayer"
+                android:layout_width="56sp"
+                android:layout_height="56sp"
+                android:layout_marginLeft="56sp"
+                android:layout_marginRight="56sp"
+                android:src="@drawable/icon_play_radio_player"
+                android:tag="@string/play"/>
+
+            <ImageView
+                android:id="@+id/imageViewIconNextRadioPlayer"
+                android:layout_width="32sp"
+                android:layout_height="28sp"
+                android:src="@drawable/icon_next_radio_player"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

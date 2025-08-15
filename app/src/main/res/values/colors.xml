@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grayBlue">#344057</color>
+    <color name="bgSwitch">#0a1223</color>
+    <color name="transparent">#00000000</color>
+    <color name="listRadio">#070c16</color>
+    <color name="nowPlayRadio">#9D9292</color>
+    <color name="activeIsPlayRadioBorder">#392488</color>
+    <color name="toggleListFav">#1752FA</color>
 </resources>

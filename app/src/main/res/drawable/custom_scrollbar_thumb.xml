@@ -1,0 +1,6 @@
+<!-- res/drawable/custom_scrollbar_thumb.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#2457C3"/> <!-- Tomato color, for example -->
+    <corners android:radius="0dp"/>
+    <size android:width="4dp"/>
+</shape>
